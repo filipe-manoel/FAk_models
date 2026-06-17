@@ -1,0 +1,44 @@
+/* Garantir que o banner seja posicionado como referência */
+.quarto-title-block .quarto-title-banner {
+  position: relative; 
+  background-image: url("idata_s.png");
+  background-size: 300px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #173929; 
+  padding-right: 70px;
+  padding-left: 70px;
+  background-origin: content-box;
+}
+
+/* Força o título preto, caso necessário */
+.quarto-title-block .quarto-title-banner h1.title {
+  color: #fffdfd !important;
+}
+
+.logo {
+  position: fixed;   /* Fixa o elemento na tela */
+  bottom: 40px;      /* Distância da borda inferior */
+  right: 40px;       /* Distância da borda direita */
+  z-index: 9999;     /* Mantém o elemento acima de outros se necessário */
+}
+
+/* Ajusta o título da TOC (Sections) para ficar mais à esquerda e para cima */
+.toc-title {
+  margin-top: 100px !important;   /* Move para cima */
+  margin-left: 100px !important;  /* Move para a esquerda */
+}
+
+/* Estilo da caixa */
+.env-box {
+  border: 1px solid #888;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 2em 0;
+}
+/* Centraliza o título dentro da caixa */
+.env-box h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
